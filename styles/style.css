@@ -16,4 +16,36 @@ padding:15px;
 border-radius: px;
 margin-top: 30px;
 font-size: 35px;
+font-weight: bold;
+}
+
+/*HEADER*/
+header {
+    background-color: rgb(58, 38, 235, 0.267);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+headerdiv img {
+    width: 230px;
+    border-radius: 10px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li a {
+    text-decoration: none;
+}
+header nav ul li {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(38,235,38);
+    border-radius: 5px;
+}
+nav ul li a {
+    color: rgb(6, 76, 97);
+    font-weight: bold;
 }
