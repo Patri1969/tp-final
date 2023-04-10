@@ -196,7 +196,7 @@ header {
    flex-direction: column;
    }
    header nav ul {
-       font-size: 9px;
+       font-size: 7px;
     }
     body h2 {
        text-align: center; 
@@ -204,7 +204,8 @@ header {
     
     }
     .synopsis p {
-    font-size: 15px;    
+    font-size: 15px;
+    font-weight: bold;    
     flex-direction: column;
     align-items: center;
     text-align: center;  
