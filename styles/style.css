@@ -82,3 +82,7 @@ nav ul li a {
     padding-right: 20px;
     padding-bottom: 0px;
 }
+.synopsis article p {
+    margin: 0px;
+    padding: 0px;
+}
