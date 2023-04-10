@@ -4,86 +4,246 @@
     box-sizing: border-box;
 }
 /*BODY*/
-body {
+body{ 
     background-image: url(https://www.xtrafondos.com/descargar.php?id=6046&resolucion=2560x1440);
     font-family: cursive;
-    color: rgb(38,235,38);
-}
-body
-h2 {
-    background-color: rgb(58, 38, 235, 0.267);
-padding:15px;
-border-radius: px;
-margin-top: 30px;
-font-size: 35px;
-font-weight: bold;
-}
+    color: rgb(38, 235, 38);      
+    }
+   
 
-/*HEADER*/
-header {
-    background-color: rgb(58, 38, 235, 0.267);
+ body
+    h2 {
+        background-color: rgba(58, 38, 235, 0.267);
+        padding: 15px;
+        border-radius: px;
+        margin-top: 30px;
+        font-size: 35px;
+        font-weight: bold;
+     }
+
+ /*HEADER*/
+ header {
+    background-color: rgba(58, 38, 235, 0.267);
     padding: 20px;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-}
-header div img {
+  } 
+
+ header div img {
     width: 230px;
     border-radius: 10px;
-}
-header nav ul {
+ }
+ header nav ul {
     list-style: none;
     display: flex;
-}
-nav ul li a {
+ }
+ nav ul li a {
     text-decoration: none;
 }
 header nav ul li {
     padding: 10px;
     margin: 10px;
-    background-color: rgb(38,235,38);
+    background-color: rgb(38, 235, 38);
     border-radius: 5px;
+ 
 }
 nav ul li a {
-    color: rgb(6, 76, 97);
+    color:  rgb(6, 76, 97);
     font-weight: bold;
 }
 /*MAIN*/
-
+  
 /*SYNOPSIS*/
 
 .synopsis img {
-    width: 400px;
-    border-radius: 10px;
-    margin-right: 30px;
-}
+    width: 400px;  
+    border-radius: 10px;    
+    margin-right: 30px; 
+    }
 .synopsis p {
-    display:flex;
+    display: flex;
     flex-direction: row;
     padding-top: 10px;
     padding-left: 10px;
-    padding-right: 20px;
+    padding-right: 20px;    
     justify-content: space-between;
     margin-left: 10px;
     margin-top: 25px;
-    align-items: end;
+    align-items:end;
     font-weight: bold;
     letter-spacing: 2.5px;
     font-family: cursive;
-    color: rgb(38,235,38)
+    color: rgb(38, 235, 38);
+    
+    
 }
-.synopsis article {
+  .synopsis article {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
     align-items: end;
     font-weight: bold;
     letter-spacing: 2.5px;
     padding-right: 20px;
-    padding-bottom: 0px;
-}
-.synopsis article p {
+    padding-bottom: 0px;   
+  }
+  .synopsis article p {
     margin: 0px;
     padding: 0px;
+     }
+  
+/*CHARACTES*/     
+.container {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    flex-direction: row;
+}
+ /*items de grid */       
+ .grid-item {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(133, 187, 8);
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    width: 220px;
+    margin: 10px;
+}
+.grid-item img {
+    width: 100%;
+    border-radius: 500px;    
 }
 
+/*WATCH DE SHOW*/
+.watch-the-show img {
+    width: 150px;
+    border-radius: 500px;
+}
+.watch-the-show {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: center;
+
+}
+.watch-the-show p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 80px;
+    margin-top: 20px;
+}
+
+
+/*MEMES*/
+article {
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;  
+     }
+
+.memes p {
+    padding-bottom: 10px;
+    padding-left: 5px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.grid-memes img {
+    width: 272px;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+
+ /*FOOTER*/
+footer {
+    background-color: rgba(58, 38, 235, 0.267); 
+    padding: 20px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div nav ul {
+    list-style: none;
+}
+footer div nav ul li {
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(38, 235, 38);
+    border-radius: 5px;
+    color:rgb(6, 76, 97);
+    font-weight: bold;
+}
+
+@media(max-width: 880px) {
+    header {     
+     flex-direction: column;
+    }   
+ }
+
+
+@media(max-width: 480px) {
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+header {
+   flex-direction: column;
+   }
+   header nav ul {
+       font-size: 10px;
+    }
+    body h2 {
+       text-align: center; 
+       font-size: 25px;
+    
+    }
+    .synopsis p {
+    font-size: 15px;
+    font-weight: lighter;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;  
+    margin-left: 10px;
+    
+    }
+.synopsis img {
+    padding: 0px;
+    padding-bottom: 5px;
+    padding-bottom: 10px;
+    margin: 0px; 
+    margin: 0px;
+    border-radius: 10px;
+}
+    .synopsis article {
+   flex-direction: column;    
+    align-items: center;
+
+
+}
+.watch-the-show {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 0px;
+   }
+.watch-the-show p {
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 0px;
+    padding: 25px;
+    text-align: center;
+    letter-spacing: 0.4px;
+}
+
+.memes p {
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 10px;
+} 
+}
