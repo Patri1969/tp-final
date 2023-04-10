@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*BODY*/
+body {
+    background-image: url();
+    font-family: cursive;
+    color: rgb(38,235,38);
+}
+body
+h2 {
+    background-color: rgb(58, 38, 235, 0.267);
+padding:15px;
+border-radius: px;
+margin-top: 30px;
+font-size: 35px;
+}
