@@ -6,7 +6,7 @@
 /*BODY*/
 body{ 
     background-image: url(https://www.xtrafondos.com/descargar.php?id=6046&resolucion=2560x1440);
-    font-family: cursive;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(38, 235, 38);      
     }
    
@@ -74,7 +74,7 @@ nav ul li a {
     align-items:end;
     font-weight: bold;
     letter-spacing: 2.5px;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(38, 235, 38);
     
     
