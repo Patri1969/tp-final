@@ -5,7 +5,7 @@
 }
 /*BODY*/
 body {
-    background-image: url();
+    background-image: url(https://www.xtrafondos.com/descargar.php?id=6046&resolucion=2560x1440);
     font-family: cursive;
     color: rgb(38,235,38);
 }
@@ -28,7 +28,7 @@ header {
     justify-content:space-between;
     align-items: center;
 }
-headerdiv img {
+header div img {
     width: 230px;
     border-radius: 10px;
 }
@@ -58,7 +58,7 @@ nav ul li a {
     border-radius: 10px;
     margin-right: 30px;
 }
-.synopsis {
+.synopsis p {
     display:flex;
     flex-direction: row;
     padding-top: 10px;
@@ -86,3 +86,4 @@ nav ul li a {
     margin: 0px;
     padding: 0px;
 }
+
