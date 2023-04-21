@@ -98,36 +98,38 @@ nav ul li a {
     padding: 0px;
      }
   
-/*CHARACTES*/     
-.container {
-    padding: 30px;
+/*CHARACTES*/
+
+.cont-personajes {
     display: flex;
+    gap: 10px;
     flex-wrap: wrap;
-    justify-items: ;
-    flex-direction: row;
-}
- /*items de grid */       
- .tarjeta {
-    display: flex;
-    flex-direction: column;
-    background-color:rgba(80, 68, 187, 0.459);
-    padding: 30px;
-    text-align: center;
-    border-radius: 10px;
-    width: 220px;
-    margin: 10px;
-}
-.tarjeta p {
-    color:  rgb(38, 235, 38);
-    font-weight: bold;
-    padding-top: 5px;
-
-
-}
-.tarjeta img {
-    width: 100%;
-    border-radius: 500px;    
-}
+    justify-content: center; 
+    }   
+         
+    
+     /*items de grid */       
+     .cont-personaje {
+        display: flex;
+        flex-direction: column;
+        background-color:rgba(80, 68, 187, 0.459);
+        padding: 30px;
+        text-align: center;
+        border-radius: 10px;
+        width: 220px;
+        margin: 10px;
+    }
+    .cont-personajes p {
+        color:  rgb(38, 235, 38);
+        font-weight: bold;
+        padding-top: 5px;
+    
+    
+    }
+    .cont-personaje img {
+        width: 100%;
+        border-radius: 500px;    
+    }
 
 /*WATCH DE SHOW*/
 .watch-the-show img {
@@ -150,13 +152,16 @@ nav ul li a {
 
 
 /*MEMES*/
-article {
+
+.container {
+    padding: 30px;
     display: flex;
-    flex-direction: row;  
     flex-wrap: wrap;
+    justify-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;  
-     }
+}
+
 
 .memes p {
     padding-bottom: 10px;

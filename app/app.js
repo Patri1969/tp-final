@@ -1,25 +1,30 @@
-fetch("https://rickandmortyapi.com/api/character")
+const $contenedor = document.getElementById("personajes");
+
+const URL_API = "https://rickandmortyapi.com/api/character/?page=17";
+
+fetch(URL_API)
 .then((response) => {
     return response.json();
 })
 .then((data) => {
- const $contenedor = document.getElementById("contenedor-personajes");
- const personajes = data.results;
+    const personajes = data.results;
+    console.log(personajes)
 
-
- for (let i = 0; i < personajes.length; i++) {
- console.log(personajes[i].name);
-
- $contenedor.innerHTML += `
- <div class="tarjeta">
- <img src="${personajes[i].image}">
-<p class="nombre-personaje">${personajes[i].name}</p>
- <p>${personajes[i].gender}<p> 
- <p>${personajes[i].species}<p> 
- <p>${personajes[i].status}<p> 
- <p>${personajes[i].location.name}<p>
  
- </div>
- `
+for (let i = 0; i < personajes.length; i++){
+   //destructuring 
+   const { name, gender, species, status, image } = personajes [i];
+   
+   $contenedor.innerHTML += `
+   <div class="cont-personaje">
+   <img 
+      src="${image}"
+      alt="imagen de ${name}"
+      />
+   <h3>${name}</h3>
+   <p>Estado: ${status}</p>
+   <p>Género: ${gender}</p>
+   <p>Especie: ${species}</p>
+ </div>`
 }
 });
