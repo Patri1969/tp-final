@@ -7,11 +7,16 @@
 body{ 
     background-image: url(https://www.xtrafondos.com/descargar.php?id=6046&resolucion=2560x1440);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(38, 235, 38);      
+    color: rgb(38, 235, 38);          
     }
    
 
  body
+ h1 {
+    letter-spacing: 3px;
+ }
+
+
     h2 {
         background-color: rgba(58, 38, 235, 0.267);
         padding: 15px;
@@ -98,14 +103,14 @@ nav ul li a {
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-items: ;
     flex-direction: row;
 }
  /*items de grid */       
  .tarjeta {
     display: flex;
     flex-direction: column;
-    background-color:rgb(133, 187, 8);
+    background-color:rgba(80, 68, 187, 0.459);
     padding: 30px;
     text-align: center;
     border-radius: 10px;
@@ -113,7 +118,11 @@ nav ul li a {
     margin: 10px;
 }
 .tarjeta p {
-    color: rgb(6, 76, 97);;
+    color:  rgb(38, 235, 38);
+    font-weight: bold;
+    padding-top: 5px;
+
+
 }
 .tarjeta img {
     width: 100%;
