@@ -22,9 +22,9 @@ for (let i = 0; i < personajes.length; i++){
       alt="imagen de ${name}"
       />
    <h3>${name}</h3>
-   <p>Estado: ${status}</p>
-   <p>Género: ${gender}</p>
-   <p>Especie: ${species}</p>
+   <p>Status: ${status}</p>
+   <p>Gender: ${gender}</p>
+   <p>Species: ${species}</p>
  </div>`
 }
 });
